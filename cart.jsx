@@ -169,7 +169,6 @@ const Products = (props) => {
   // TODO: implement the restockProducts function
   const restockProducts = async (url) => {
     try {
-      console.log("fetching");
       const response = await fetch(url);
       const apiData = await response.json();
       const newData = apiData.data.map((record) => record.attributes);
