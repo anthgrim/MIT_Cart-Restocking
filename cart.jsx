@@ -97,7 +97,7 @@ const Products = (props) => {
 
     //Validation for 0 qty
     if (item[0].inStock === 0)
-      return alert(`No more ${item.name} available. Please restock`);
+      return alert(`No more available. Please restock`);
 
     //Updating data procedure
     const updatedData = items.map((item) => {
